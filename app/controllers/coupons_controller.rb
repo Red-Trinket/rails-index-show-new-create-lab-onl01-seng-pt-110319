@@ -1,4 +1,5 @@
 class CouponsController < ApplicationController
+  before_action :set_coupon, only: [:show, :new]
   
   def index 
     @coupons = Coupon.all 
