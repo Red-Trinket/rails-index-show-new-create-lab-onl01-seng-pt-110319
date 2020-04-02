@@ -1,5 +1,5 @@
 class Coupon < ActiveRecord::Base 
   def to_s 
-    self.coupon_code + " " + self.store 
+    self.coupon[coupon_code] + " " + self.coupon[store] 
   end 
 end 
